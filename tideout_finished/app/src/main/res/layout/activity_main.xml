@@ -1,0 +1,57 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sea" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TideOut"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#1B84D4"
+            android:gravity="center"
+            android:paddingBottom="50dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar sessão"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Criar conta"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="10dp"/>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"
+            android:background="@drawable/rounded_button"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

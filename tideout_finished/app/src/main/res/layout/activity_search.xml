@@ -1,0 +1,113 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_item_white"
+        android:padding="12dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:text="Voltar"
+            android:background="@drawable/rounded_button" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TideOut"
+            android:textColor="#1B84D4"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:shadowColor="#80000000"
+            android:shadowRadius="4"
+            android:shadowDx="2"
+            android:shadowDy="2" />
+
+            <EditText
+                android:id="@+id/searchInput"
+                android:inputType="text"
+                android:autofillHints="Nome ou Concelho"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:hint="Pesquisar por nome ou concelho"
+                android:minHeight="48dp"
+                android:padding="8dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_button"
+                android:elevation="4dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSearchbyBeachName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Nome"
+                    android:background="@drawable/rounded_button"
+                    android:layout_weight="1"
+                    android:layout_margin="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSearchbyBeachRegion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Concelho"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_margin="4dp"
+                    />
+
+                <Button
+                    android:id="@+id/btnSearchNearMe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Aqui perto"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_margin="4dp"
+                    />
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/noResultsMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Sem resultados. Tente novamente."
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:textSize="18dp"
+            android:layout_marginBottom="20dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/results"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:visibility="visible"/>
+
+
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De momento, a TideOut apenas disponibiliza algumas praias do distrito de Lisboa. A aplicação continua em desenvolvimento e no futuro planeamos ter mais opções."
+            android:textSize="13sp"
+            android:gravity="bottom"
+            android:layout_marginBottom="10dp" />
+
+    </LinearLayout>
